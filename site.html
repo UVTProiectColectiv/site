@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="../js/Untitled-3.js"></script>
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/slider.css">
+<link rel="stylesheet" href="../css/sliders.css">
+<link rel="stylesheet" href="../css/arrow.css">
+<link rel="stylesheet" href="../css/butoane.css">
+<link rel="stylesheet" href="../css/template.css">
+<link rel="stylesheet" href="../css/contact.css">
+<link rel="stylesheet" href="../css/despre.css">
+</head>
+<body id="home">
+<header class="headers">
+<div class="topnav" id="myTopnav">
+ <a href="#home" class="active">Home</a>
+ <a href="#template">Template</a>
+ <a href="#contactus"> Contact us</a>
+  <a href="pagina_log.html">Log in/ Sign up</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</header>
+<main>
+<div class="text">
+<div class="sliders">
+<slider>
+    <slide></slide>
+    <slide></slide>
+    <slide></slide>
+    <slide></slide>
+</slider>
+    <h1> ScanTEST </h1>
+<p> excelenta-profesionalism-creativitate-educatie </p>
+</div>
+</div>
+<table>
+            <tr>
+            <td>
+            <section class="despre" id="despre">
+               <h1 class="title"> Despre noi</h1>
+                <p>Această aplicație înlocuiește metoda veche și de lungă durată a corectarii testelor scrise.
+                Reușește printr-o simpla scanare a unei imagini, să ofere rezultatul obținut de un student/elev
+                sau oricare altă persoană ce este testată. <span id="dots">...</span><span id="more">Aceasta aplicație vine în ajutorul cadrelor didactice și nu numai. Ea are scopul de a ușura evaluarea și notarea examenelor scrise de tip grilă sau „Adevărat/Fals”. Aplicația scanează o imagine reprezentând examenul scris, apoi compara rezultatele preluate din fotografie cu cele existente în baza de date a aplicației, iar mai apoi returnează procentul de corectitudine al răspunsurilor. 
+ </span></p>
+                <button type="button" id="read" onclick="read()">Citeste mai mult</button>
+                <script src="../js/onmouseclick.js"></script>
+            </section>
+                </td>
+                <td>
+                    <img src="../imagini/2d.png" alt="">
+                </td>
+                </tr>
+            </table>
+<div class="template" id="template">
+<div class="container1">
+        <div class="container1_item">
+                <a href="../pagini/grila.html" class="butonGrila">GRILA</a>  
+        </div>
+                    <div class="container1_item">
+                       <a href="#" class=""><img src="../imagini/99.png" alt="imagine"></a>
+                    </div>
+                    <div class="container1_item">
+                      <a href="../pagini/af.html" class="butonTF">A/F</a>
+                        
+                    </div>
+        
+</div>
+    </div>
+<div class="arrow" id="home">
+    <a href="#home"><img src="../imagini/arrow4.png" alt="up_arrow"></a>
+</div>
+<div class="contactus" id="contactus">
+<div class="contact-title">
+      <h1>Hello,</h1>
+      <h2>We are always ready to serve you!</h2>
+    </div>
+
+    <div class="contact-form">
+      <form id="contact-form" action="../php/contactus.php" method="post">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        <br>
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+        <br>
+        <textarea name="massage" rows="4" class="form-control" placeholder="Message" required></textarea>
+        <br>
+        <input type="submit"  value="SEND MESSAGE" class="form-control submit">
+        <span class="success"><? echo $success?></span>
+      </form>
+
+    </div>
+    
+    </div>
+<div class="footer">
+    <a href="#">@ 2021 ScanTest</a>
+</div> 
+
+</main>
+</body>
+</html>

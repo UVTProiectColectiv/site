@@ -1,0 +1,25 @@
+.template{
+    text-align: center;
+    padding: 10% 10%;
+    background: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url(../imagini/h.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container1{
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-between;
+}
+.container1_item{
+    width: 30%;
+}
+.container1_item img{
+    width: 100%;
+    margin-bottom: 25px;
+}
+.container1_item h3{
+    color: #fb2274;
+    margin-bottom:15px;
+}
